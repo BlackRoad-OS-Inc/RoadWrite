@@ -88,7 +88,7 @@ class Update extends Action
      * @param bool $rollback
      * @param UtopiaResponse $response
      * @param Database $dbForProject
-     * @param Document $user
+     * @param User $user
      * @param TransactionState $transactionState
      * @param Delete $queueForDeletes
      * @param Event $queueForEvents
@@ -106,7 +106,7 @@ class Update extends Action
      * @throws Structure
      * @throws \Utopia\Http\Exception
      */
-    public function action(string $transactionId, bool $commit, bool $rollback, UtopiaResponse $response, Database $dbForProject, Document $user, TransactionState $transactionState, Delete $queueForDeletes, Event $queueForEvents, Context $usage, Event $queueForRealtime, Event $queueForFunctions, Event $queueForWebhooks, Authorization $authorization, EventProcessor $eventProcessor): void
+    public function action(string $transactionId, bool $commit, bool $rollback, UtopiaResponse $response, Database $dbForProject, User $user, TransactionState $transactionState, Delete $queueForDeletes, Event $queueForEvents, Context $usage, Event $queueForRealtime, Event $queueForFunctions, Event $queueForWebhooks, Authorization $authorization, EventProcessor $eventProcessor): void
     {
         if (!$commit && !$rollback) {
             throw new Exception(Exception::GENERAL_BAD_REQUEST, 'Either commit or rollback must be true');

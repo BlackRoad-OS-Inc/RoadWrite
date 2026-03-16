@@ -90,7 +90,7 @@ class Decrement extends Action
             ->callback($this->action(...));
     }
 
-    public function action(string $databaseId, string $collectionId, string $documentId, string $attribute, int|float $value, int|float|null $min, ?string $transactionId, UtopiaResponse $response, Database $dbForProject, Event $queueForEvents, Context $usage, array $plan, Authorization $authorization, Document $user): void
+    public function action(string $databaseId, string $collectionId, string $documentId, string $attribute, int|float $value, int|float|null $min, ?string $transactionId, UtopiaResponse $response, Database $dbForProject, Event $queueForEvents, Context $usage, array $plan, Authorization $authorization, User $user): void
     {
         $isAPIKey = User::isApp($authorization->getRoles());
         $isPrivilegedUser = $user::isPrivileged($authorization->getRoles());

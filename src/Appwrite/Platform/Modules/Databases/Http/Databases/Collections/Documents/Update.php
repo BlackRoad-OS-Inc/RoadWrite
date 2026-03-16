@@ -92,7 +92,7 @@ class Update extends Action
             ->callback($this->action(...));
     }
 
-    public function action(string $databaseId, string $collectionId, string $documentId, string|array $data, ?array $permissions, ?string $transactionId, ?\DateTime $requestTimestamp, UtopiaResponse $response, Database $dbForProject, Event $queueForEvents, Context $usage, TransactionState $transactionState, array $plan, Authorization $authorization, Document $user): void
+    public function action(string $databaseId, string $collectionId, string $documentId, string|array $data, ?array $permissions, ?string $transactionId, ?\DateTime $requestTimestamp, UtopiaResponse $response, Database $dbForProject, Event $queueForEvents, Context $usage, TransactionState $transactionState, array $plan, Authorization $authorization, User $user): void
     {
         $data = (\is_string($data)) ? \json_decode($data, true) : $data; // Cast to JSON array
 

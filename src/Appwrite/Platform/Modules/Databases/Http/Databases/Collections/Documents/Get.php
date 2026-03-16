@@ -76,7 +76,7 @@ class Get extends Action
             ->callback($this->action(...));
     }
 
-    public function action(string $databaseId, string $collectionId, string $documentId, array $queries, ?string $transactionId, UtopiaResponse $response, Database $dbForProject, Context $usage, TransactionState $transactionState, Authorization $authorization, Document $user): void
+    public function action(string $databaseId, string $collectionId, string $documentId, array $queries, ?string $transactionId, UtopiaResponse $response, Database $dbForProject, Context $usage, TransactionState $transactionState, Authorization $authorization, User $user): void
     {
         $isAPIKey = User::isApp($authorization->getRoles());
         $isPrivilegedUser = $user::isPrivileged($authorization->getRoles());
