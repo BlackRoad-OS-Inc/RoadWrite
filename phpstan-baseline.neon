@@ -73,12 +73,6 @@ parameters:
 			path: app/cli.php
 
 		-
-			message: '#^Parameter \#1 \$name of class Utopia\\Queue\\Queue constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/cli.php
-
-		-
 			message: '#^Parameter \#1 \$name of method Utopia\\DI\\Injection\:\:inject\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -103,12 +97,6 @@ parameters:
 			path: app/cli.php
 
 		-
-			message: '#^Parameter \#1 \$version of method Utopia\\Logger\\Log\:\:setVersion\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/cli.php
-
-		-
 			message: '#^Parameter \#2 \$cache of class Utopia\\Database\\Database constructor expects Utopia\\Cache\\Cache, mixed given\.$#'
 			identifier: argument.type
 			count: 2
@@ -124,12 +112,6 @@ parameters:
 			message: '#^Parameter \#2 \$default of static method Utopia\\System\\System\:\:getEnv\(\) expects string\|null, string\|false given\.$#'
 			identifier: argument.type
 			count: 1
-			path: app/cli.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
 			path: app/cli.php
 
 		-
@@ -191,18 +173,6 @@ parameters:
 			identifier: offsetAccess.nonOffsetAccessible
 			count: 14
 			path: app/config/frameworks.php
-
-		-
-			message: '#^Parameter \#1 \$haystack of function str_contains expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: app/config/platform.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 3
-			path: app/config/platform.php
 
 		-
 			message: '#^Parameter \#2 \$default of static method Utopia\\System\\System\:\:getEnv\(\) expects string\|null, int given\.$#'
@@ -368,12 +338,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#2 \$haystack of function in_array expects array, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/config/templates/function.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/config/templates/function.php
@@ -2659,12 +2623,6 @@ parameters:
 			path: app/controllers/api/projects.php
 
 		-
-			message: '#^Parameter \#1 \$name of method Utopia\\Locale\\Locale\:\:setFallback\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/controllers/api/projects.php
-
-		-
 			message: '#^Parameter \#1 \$queries of static method Utopia\\Database\\Query\:\:parseQueries\(\) expects array\<string\>, array given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3175,12 +3133,6 @@ parameters:
 			path: app/controllers/general.php
 
 		-
-			message: '#^Binary operation "\." between ''cd /usr/local…'' and mixed results in an error\.$#'
-			identifier: binaryOp.invalid
-			count: 1
-			path: app/controllers/general.php
-
-		-
 			message: '#^Binary operation "\." between ''http\://''\|''https\://'' and mixed results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
@@ -3541,19 +3493,7 @@ parameters:
 			path: app/controllers/general.php
 
 		-
-			message: '#^Parameter \#1 \$version of method Utopia\\Logger\\Log\:\:setVersion\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/controllers/general.php
-
-		-
 			message: '#^Parameter \#2 \$array of function array_key_exists expects array, mixed given\.$#'
-			identifier: argument.type
-			count: 2
-			path: app/controllers/general.php
-
-		-
-			message: '#^Parameter \#2 \$default of method Appwrite\\Utopia\\Request\:\:getHeader\(\) expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 2
 			path: app/controllers/general.php
@@ -3589,12 +3529,6 @@ parameters:
 			path: app/controllers/general.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: app/controllers/general.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Utopia\\Http\\Response\:\:addCookie\(\) expects string\|null, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3604,6 +3538,12 @@ parameters:
 			message: '#^Parameter \#2 \$value of method Utopia\\Http\\Response\:\:addHeader\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
+			path: app/controllers/general.php
+
+		-
+			message: '#^Parameter \#3 \$subject of function str_replace expects array\<string\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
 			path: app/controllers/general.php
 
 		-
@@ -4693,12 +4633,6 @@ parameters:
 			path: app/http.php
 
 		-
-			message: '#^Parameter \#1 \$namespace of method Utopia\\Database\\Database\:\:setNamespace\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/http.php
-
-		-
 			message: '#^Parameter \#1 \$pool of class Utopia\\Database\\Adapter\\Pool constructor expects Utopia\\Pools\\Pool\<covariant Utopia\\Database\\Adapter\>, Utopia\\Pools\\Pool\<covariant mixed\> given\.$#'
 			identifier: argument.type
 			count: 1
@@ -4761,7 +4695,7 @@ parameters:
 		-
 			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
 			identifier: argument.type
-			count: 4
+			count: 1
 			path: app/http.php
 
 		-
@@ -4777,7 +4711,7 @@ parameters:
 			path: app/http.php
 
 		-
-			message: '#^Parameter \$port of class Swoole\\Http\\Server constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \$port of class Swoole\\Http\\Server constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/http.php
@@ -5047,7 +4981,7 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Binary operation "/" between string\|null and string\|null results in an error\.$#'
+			message: '#^Binary operation "/" between string and string results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
 			path: app/init/registers.php
@@ -5061,6 +4995,12 @@ parameters:
 		-
 			message: '#^Match arm comparison between ''redis'' and ''redis'' is always true\.$#'
 			identifier: match.alwaysTrue
+			count: 1
+			path: app/init/registers.php
+
+		-
+			message: '#^Offset ''dsns'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
 			count: 1
 			path: app/init/registers.php
 
@@ -5089,7 +5029,7 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Offset ''multiple'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string\|null, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
+			message: '#^Offset ''multiple'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.offset
 			count: 1
 			path: app/init/registers.php
@@ -5107,7 +5047,7 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Offset ''schemes'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string\|null, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
+			message: '#^Offset ''schemes'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.offset
 			count: 1
 			path: app/init/registers.php
@@ -5125,7 +5065,7 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Offset ''type'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string\|null, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
+			message: '#^Offset ''type'' on array\{type\: ''cache'', dsns\: non\-falsy\-string, multiple\: true, schemes\: array\{''redis''\}\}\|array\{type\: ''consumer''\|''publisher''\|''pubsub'', dsns\: non\-falsy\-string, multiple\: false, schemes\: array\{''redis''\}\}\|array\{type\: ''database'', dsns\: string, multiple\: bool, schemes\: array\{''mariadb'', ''mongodb'', ''mysql'', ''postgresql''\}\} on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.offset
 			count: 1
 			path: app/init/registers.php
@@ -5133,18 +5073,6 @@ parameters:
 		-
 			message: '#^Offset 0 on non\-empty\-list\<string\> on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.offset
-			count: 1
-			path: app/init/registers.php
-
-		-
-			message: '#^Parameter \#1 \$address of method PHPMailer\\PHPMailer\\PHPMailer\:\:addReplyTo\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/registers.php
-
-		-
-			message: '#^Parameter \#1 \$address of method PHPMailer\\PHPMailer\\PHPMailer\:\:setFrom\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: app/init/registers.php
 
@@ -5163,7 +5091,7 @@ parameters:
 		-
 			message: '#^Parameter \#1 \$database of class Utopia\\Mongo\\Client constructor expects string, string\|null given\.$#'
 			identifier: argument.type
-			count: 2
+			count: 1
 			path: app/init/registers.php
 
 		-
@@ -5191,27 +5119,9 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Parameter \#1 \$string of function urldecode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/registers.php
-
-		-
-			message: '#^Parameter \#1 \$value of static method Utopia\\Http\\Http\:\:setMode\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/registers.php
-
-		-
 			message: '#^Parameter \#2 \$default of static method Utopia\\System\\System\:\:getEnv\(\) expects string\|null, int given\.$#'
 			identifier: argument.type
 			count: 7
-			path: app/init/registers.php
-
-		-
-			message: '#^Parameter \#2 \$host of class Utopia\\Mongo\\Client constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: app/init/registers.php
 
 		-
@@ -5235,18 +5145,12 @@ parameters:
 		-
 			message: '#^Parameter \#4 \$user of class Utopia\\Mongo\\Client constructor expects string, string\|null given\.$#'
 			identifier: argument.type
-			count: 2
+			count: 1
 			path: app/init/registers.php
 
 		-
 			message: '#^Parameter \#5 \$password of class Utopia\\Mongo\\Client constructor expects string, string\|null given\.$#'
 			identifier: argument.type
-			count: 2
-			path: app/init/registers.php
-
-		-
-			message: '#^Property PHPMailer\\PHPMailer\\PHPMailer\:\:\$Host \(string\) does not accept string\|null\.$#'
-			identifier: assign.propertyType
 			count: 1
 			path: app/init/registers.php
 
@@ -5257,13 +5161,7 @@ parameters:
 			path: app/init/registers.php
 
 		-
-			message: '#^Property PHPMailer\\PHPMailer\\PHPMailer\:\:\$Port \(int\) does not accept string\|null\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: app/init/registers.php
-
-		-
-			message: '#^Property PHPMailer\\PHPMailer\\PHPMailer\:\:\$SMTPSecure \(string\) does not accept string\|null\.$#'
+			message: '#^Property PHPMailer\\PHPMailer\\PHPMailer\:\:\$Port \(int\) does not accept string\.$#'
 			identifier: assign.propertyType
 			count: 1
 			path: app/init/registers.php
@@ -5487,7 +5385,7 @@ parameters:
 		-
 			message: '#^Expression on left side of \?\? is not nullable\.$#'
 			identifier: nullCoalesce.expr
-			count: 1
+			count: 2
 			path: app/init/resources.php
 
 		-
@@ -5539,12 +5437,6 @@ parameters:
 			path: app/init/resources.php
 
 		-
-			message: '#^Parameter \#1 \$default of class Utopia\\Locale\\Locale constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
 			message: '#^Parameter \#1 \$dsn of class Utopia\\DSN\\DSN constructor expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
@@ -5554,12 +5446,6 @@ parameters:
 			message: '#^Parameter \#1 \$event of closure expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 8
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#1 \$host of method Redis\:\:pconnect\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: app/init/resources.php
 
 		-
@@ -5576,18 +5462,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$key of method Utopia\\Http\\Adapter\\Swoole\\Request\:\:getCookie\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#1 \$name of class Utopia\\Queue\\Queue constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#1 \$name of method Utopia\\Locale\\Locale\:\:setFallback\(\) expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/init/resources.php
@@ -5648,42 +5522,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$utopia of static method Appwrite\\GraphQL\\Schema\:\:build\(\) expects Utopia\\Http\\Http, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\AWS constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\Backblaze constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\DOSpaces constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\Linode constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\S3 constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#2 \$accessKey of class Utopia\\Storage\\Device\\Wasabi constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/init/resources.php
@@ -5773,12 +5611,6 @@ parameters:
 			path: app/init/resources.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 3
-			path: app/init/resources.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Appwrite\\Usage\\Context\:\:addMetric\(\) expects int, mixed given\.$#'
 			identifier: argument.type
 			count: 17
@@ -5791,109 +5623,7 @@ parameters:
 			path: app/init/resources.php
 
 		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\AWS constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\Backblaze constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\DOSpaces constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\Linode constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\S3 constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#3 \$secretKey of class Utopia\\Storage\\Device\\Wasabi constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#4 \$bucket of class Utopia\\Storage\\Device\\AWS constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#4 \$bucket of class Utopia\\Storage\\Device\\Backblaze constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#4 \$bucket of class Utopia\\Storage\\Device\\DOSpaces constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#4 \$bucket of class Utopia\\Storage\\Device\\Linode constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#4 \$bucket of class Utopia\\Storage\\Device\\Wasabi constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
 			message: '#^Parameter \#5 \$queueForFunctions of closure expects Appwrite\\Event\\Func, Appwrite\\Event\\Event given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\AWS constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\Backblaze constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\DOSpaces constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\Linode constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\S3 constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/init/resources.php
-
-		-
-			message: '#^Parameter \#5 \$region of class Utopia\\Storage\\Device\\Wasabi constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/init/resources.php
@@ -6229,12 +5959,6 @@ parameters:
 			path: app/realtime.php
 
 		-
-			message: '#^Parameter \#1 \$host of method Redis\:\:pconnect\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/realtime.php
-
-		-
 			message: '#^Parameter \#1 \$json of function json_decode expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -6343,12 +6067,6 @@ parameters:
 			path: app/realtime.php
 
 		-
-			message: '#^Parameter \#1 \$version of method Utopia\\Logger\\Log\:\:setVersion\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/realtime.php
-
-		-
 			message: '#^Parameter \#2 \$array of function array_key_exists expects array, mixed given\.$#'
 			identifier: argument.type
 			count: 3
@@ -6391,12 +6109,6 @@ parameters:
 			path: app/realtime.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/realtime.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Utopia\\Abuse\\Adapter\:\:setParam\(\) expects string, int given\.$#'
 			identifier: argument.type
 			count: 1
@@ -6427,7 +6139,7 @@ parameters:
 			path: app/realtime.php
 
 		-
-			message: '#^Parameter \$port of class Utopia\\WebSocket\\Adapter\\Swoole constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \$port of class Utopia\\WebSocket\\Adapter\\Swoole constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/realtime.php
@@ -6457,7 +6169,7 @@ parameters:
 			path: app/worker.php
 
 		-
-			message: '#^Binary operation "\*" between \-1 and string\|null results in an error\.$#'
+			message: '#^Binary operation "\*" between \-1 and string results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 3
 			path: app/worker.php
@@ -6547,19 +6259,7 @@ parameters:
 			path: app/worker.php
 
 		-
-			message: '#^Parameter \#1 \$host of method Redis\:\:pconnect\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/worker.php
-
-		-
 			message: '#^Parameter \#1 \$input of class Utopia\\Database\\Document constructor expects array\<string, mixed\>, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: app/worker.php
-
-		-
-			message: '#^Parameter \#1 \$name of class Utopia\\Queue\\Queue constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: app/worker.php
@@ -6589,12 +6289,6 @@ parameters:
 			path: app/worker.php
 
 		-
-			message: '#^Parameter \#1 \$version of method Utopia\\Logger\\Log\:\:setVersion\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: app/worker.php
-
-		-
 			message: '#^Parameter \#2 \$cache of class Utopia\\Database\\Database constructor expects Utopia\\Cache\\Cache, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -6614,12 +6308,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#2 \$seconds of static method Utopia\\Database\\DateTime\:\:addSeconds\(\) expects int, mixed given\.$#'
-			identifier: argument.type
-			count: 3
-			path: app/worker.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 3
 			path: app/worker.php
@@ -10903,32 +10591,8 @@ parameters:
 			path: src/Appwrite/Event/Audit.php
 
 		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Audit.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Audit.php
-
-		-
 			message: '#^Method Appwrite\\Event\\Build\:\:preparePayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/Build.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Build.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Build.php
 
@@ -10939,26 +10603,8 @@ parameters:
 			path: src/Appwrite/Event/Certificate.php
 
 		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Certificate.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Certificate.php
-
-		-
 			message: '#^Method Appwrite\\Event\\Database\:\:preparePayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/Database.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Database.php
 
@@ -10983,18 +10629,6 @@ parameters:
 		-
 			message: '#^Method Appwrite\\Event\\Delete\:\:preparePayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/Delete.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Delete.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Delete.php
 
@@ -11197,18 +10831,6 @@ parameters:
 			path: src/Appwrite/Event/Func.php
 
 		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Func.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Func.php
-
-		-
 			message: '#^Property Appwrite\\Event\\Func\:\:\$headers type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
@@ -11331,18 +10953,6 @@ parameters:
 		-
 			message: '#^PHPDoc tag @return with type string is incompatible with native type Appwrite\\Event\\Mail\.$#'
 			identifier: return.phpDocType
-			count: 1
-			path: src/Appwrite/Event/Mail.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Mail.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Mail.php
 
@@ -11479,18 +11089,6 @@ parameters:
 			path: src/Appwrite/Event/Messaging.php
 
 		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Messaging.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Messaging.php
-
-		-
 			message: '#^Property Appwrite\\Event\\Messaging\:\:\$recipients type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
@@ -11499,18 +11097,6 @@ parameters:
 		-
 			message: '#^Method Appwrite\\Event\\Migration\:\:preparePayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/Migration.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Migration.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Migration.php
 
@@ -11581,32 +11167,8 @@ parameters:
 			path: src/Appwrite/Event/Screenshot.php
 
 		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Screenshot.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Screenshot.php
-
-		-
 			message: '#^Method Appwrite\\Event\\StatsResources\:\:preparePayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/StatsResources.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/StatsResources.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/StatsResources.php
 
@@ -11667,18 +11229,6 @@ parameters:
 		-
 			message: '#^Method Appwrite\\Event\\Webhook\:\:trimPayload\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Event/Webhook.php
-
-		-
-			message: '#^Parameter \#1 \$class of method Appwrite\\Event\\Event\:\:setClass\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Event/Webhook.php
-
-		-
-			message: '#^Parameter \#1 \$queue of method Appwrite\\Event\\Event\:\:setQueue\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Event/Webhook.php
 
@@ -15049,6 +14599,438 @@ parameters:
 			path: src/Appwrite/Platform/Action.php
 
 		-
+			message: '#^Cannot access offset ''appDomain'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''appDomain''\|''database''\|''emailCertificates''\|''httpPort''\|''httpsPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''assistantOpenAIKey''\|''opensslKey'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''assistantOpenAIKeyHash''\|''opensslKeyHash'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''database'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''emailCertificates'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''httpPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot access offset ''httpsPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 3
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Http\\Installer\\Install\:\:action\(\) has parameter \$paths with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Http\\Installer\\Install\:\:buildErrorDetails\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Http\\Installer\\Install\:\:writeSseEvent\(\) has parameter \$payload with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Offset ''payload'' might not exist on array\|null\.$#'
+			identifier: offsetAccess.notFound
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Offset 0 on non\-empty\-list\<string\> on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Parameter \#1 \$httpPort of method Appwrite\\Platform\\Tasks\\Install\:\:performInstallation\(\) expects string, int\<min, \-1\>\|int\<1, max\>\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Parameter \#1 \$string of function ucfirst expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Parameter \#2 \$httpsPort of method Appwrite\\Platform\\Tasks\\Install\:\:performInstallation\(\) expects string, int\<min, \-1\>\|int\<1, max\>\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between non\-empty\-string and '''' will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 3
+			path: src/Appwrite/Platform/Installer/Http/Installer/Install.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/Status.php
+
+		-
+			message: '#^Binary operation "\." between mixed and ''/installer\.phtml'' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/View.php
+
+		-
+			message: '#^Binary operation "\." between mixed and ''/installer…'' results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/View.php
+
+		-
+			message: '#^Cannot access offset ''default'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/View.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Http\\Installer\\View\:\:action\(\) has parameter \$paths with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Http/Installer/View.php
+
+		-
+			message: '#^Parameter \#1 \$data of method Utopia\\Http\\Response\:\:html\(\) expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Http/Installer/View.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 6
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:__construct\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:apply\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:containsKnownKeys\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:getVars\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:hasValidStringValue\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:setVars\(\) has parameter \$vars with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:toArray\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Property Appwrite\\Platform\\Installer\\Runtime\\Config\:\:\$vars type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/Config.php
+
+		-
+			message: '#^Cannot access offset ''installId'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Cannot access offset mixed on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:__construct\(\) has parameter \$paths with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:applyEnvConfig\(\) has parameter \$cfg with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:buildConfig\(\) has parameter \$overrides with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:isGlobalLockActive\(\) has parameter \$lock with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:isValidPort\(\) has parameter \$value with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:parseEnvFile\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:readConfigFile\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:readProgressFile\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:sanitizeInstallId\(\) has parameter \$value with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:withGlobalLock\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Runtime\\State\:\:writeProgressFile\(\) has parameter \$payload with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Offset 1 on array\{0\: non\-falsy\-string, 1\: non\-empty\-string, 2\?\: numeric\-string\} on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#1 \$lock of method Appwrite\\Platform\\Installer\\Runtime\\State\:\:isGlobalLockActive\(\) expects array\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function ftruncate expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function fwrite expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#1 \$stream of function rewind expects resource, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#1 \$string of function trim expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Parameter \#2 \$data of function fwrite expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Property Appwrite\\Platform\\Installer\\Runtime\\State\:\:\$paths is never read, only written\.$#'
+			identifier: property.onlyWritten
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Property Appwrite\\Platform\\Installer\\Runtime\\State\:\:\$paths type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Runtime/State.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Cannot cast non\-empty\-list\<mixed\>\|non\-falsy\-string to string\.$#'
+			identifier: cast.string
+			count: 2
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Installer\\Server\:\:startDockerInstaller\(\) has parameter \$opts with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#1 \$directory of method Utopia\\Http\\Files\:\:load\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#1 \$filename of function unlink expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#1 \$path of function realpath expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#1 \$value of method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:setLockedDatabase\(\) expects string\|null, list\<mixed\>\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#1 \$value of method Appwrite\\Platform\\Installer\\Runtime\\Config\:\:setLockedDatabase\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#2 \$port of class Utopia\\Http\\Adapter\\Swoole\\Server@anonymous/src/Appwrite/Platform/Installer/Server\.php\:156 constructor expects string\|null, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#2 \$port of method Appwrite\\Platform\\Installer\\Server\:\:printInstallerUrl\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Parameter \#3 \$readyFile of method Appwrite\\Platform\\Installer\\Server\:\:startSwooleServer\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Property Appwrite\\Platform\\Installer\\Server\:\:\$paths type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Installer/Server.php
+
+		-
+			message: '#^Offset 1 on array\{0\: non\-falsy\-string, 1\: non\-empty\-string, 2\?\: numeric\-string\} on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: src/Appwrite/Platform/Installer/Validator/AppDomain.php
+
+		-
 			message: '#^Parameter \#1 \$issuer of method Appwrite\\Auth\\MFA\\Type\:\:setIssuer\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -16219,13 +16201,13 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Compute/Base.php
 
 		-
-			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string\|null given\.$#'
+			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Compute/Base.php
 
 		-
-			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Compute/Base.php
@@ -16345,12 +16327,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Console/Http/Resources/Get.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 3
-			path: src/Appwrite/Platform/Modules/Console/Http/Resources/Get.php
-
-		-
 			message: '#^Method Appwrite\\Platform\\Modules\\Console\\Http\\Variables\\Get\:\:action\(\) has no return type specified\.$#'
 			identifier: missingType.return
 			count: 1
@@ -16364,12 +16340,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$domain of class Utopia\\Domains\\Domain constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Console/Http/Variables/Get.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Console/Http/Variables/Get.php
@@ -21427,12 +21397,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
 
 		-
-			message: '#^Parameter \#2 \$default of method Utopia\\Http\\Request\:\:getHeader\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
-
-		-
 			message: '#^Parameter \#2 \$default of static method Utopia\\System\\System\:\:getEnv\(\) expects string\|null, int given\.$#'
 			identifier: argument.type
 			count: 6
@@ -21451,12 +21415,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Utopia\\Http\\Response\:\:addHeader\(\) expects string, \(float\|int\) given\.$#'
 			identifier: argument.type
 			count: 1
@@ -21469,13 +21427,13 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
 
 		-
-			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string\|null given\.$#'
+			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
 
 		-
-			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Create.php
@@ -21625,13 +21583,13 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Update.php
 
 		-
-			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string\|null given\.$#'
+			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Update.php
 
 		-
-			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Functions/Http/Functions/Update.php
@@ -21699,12 +21657,6 @@ parameters:
 		-
 			message: '#^Method Appwrite\\Platform\\Modules\\Functions\\Http\\Runtimes\\XList\:\:getName\(\) has no return type specified\.$#'
 			identifier: missingType.return
-			count: 1
-			path: src/Appwrite/Platform/Modules/Functions/Http/Runtimes/XList.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Functions/Http/Runtimes/XList.php
 
@@ -22855,12 +22807,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Functions/Workers/Screenshots.php
 
 		-
-			message: '#^Parameter \#1 \$host of class Appwrite\\ClamAV\\Network constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Health/Http/Health/AntiVirus/Get.php
-
-		-
 			message: '#^Parameter \#2 \$default of static method Utopia\\System\\System\:\:getEnv\(\) expects string\|null, int given\.$#'
 			identifier: argument.type
 			count: 1
@@ -23299,12 +23245,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Projects/Http/Projects/Create.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 5
-			path: src/Appwrite/Platform/Modules/Projects/Http/Projects/Create.php
-
-		-
 			message: '#^Possibly invalid array key type mixed\.$#'
 			identifier: offsetAccess.invalidOffset
 			count: 1
@@ -23593,12 +23533,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Proxy/Action.php
 
 		-
-			message: '#^Parameter \#1 \$domain of class Utopia\\Domains\\Domain constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Proxy/Action.php
-
-		-
 			message: '#^Parameter \#1 \$validators of class Utopia\\Validator\\AnyOf constructor expects array\<Utopia\\Validator\>, list\<object\> given\.$#'
 			identifier: argument.type
 			count: 2
@@ -23608,12 +23542,6 @@ parameters:
 			message: '#^Parameter \#2 \$message of class Appwrite\\Extend\\Exception constructor expects string\|null, mixed given\.$#'
 			identifier: argument.type
 			count: 2
-			path: src/Appwrite/Platform/Modules/Proxy/Action.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 8
 			path: src/Appwrite/Platform/Modules/Proxy/Action.php
 
 		-
@@ -24409,13 +24337,13 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Create.php
 
 		-
-			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string\|null given\.$#'
+			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Create.php
 
 		-
-			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Create.php
@@ -24529,13 +24457,13 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Update.php
 
 		-
-			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string\|null given\.$#'
+			message: '#^Parameter \#3 \$maxCpus of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects float, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Update.php
 
 		-
-			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string\|null given\.$#'
+			message: '#^Parameter \#4 \$maxMemory of class Appwrite\\Platform\\Modules\\Compute\\Validator\\Specification constructor expects int, string given\.$#'
 			identifier: argument.type
 			count: 2
 			path: src/Appwrite/Platform/Modules/Sites/Http/Sites/Update.php
@@ -25159,7 +25087,7 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Create.php
 
 		-
-			message: '#^Parameter \#1 \$bytes of static method Utopia\\Storage\\Storage\:\:human\(\) expects int, string\|null given\.$#'
+			message: '#^Parameter \#1 \$bytes of static method Utopia\\Storage\\Storage\:\:human\(\) expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Create.php
@@ -25220,12 +25148,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$allowed of class Utopia\\Storage\\Validator\\FileExt constructor expects array, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Files/Create.php
-
-		-
-			message: '#^Parameter \#1 \$host of class Appwrite\\ClamAV\\Network constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Files/Create.php
@@ -26005,7 +25927,7 @@ parameters:
 			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Update.php
 
 		-
-			message: '#^Parameter \#1 \$bytes of static method Utopia\\Storage\\Storage\:\:human\(\) expects int, string\|null given\.$#'
+			message: '#^Parameter \#1 \$bytes of static method Utopia\\Storage\\Storage\:\:human\(\) expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/Storage/Http/Buckets/Update.php
@@ -27337,12 +27259,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Authorize/External/Update.php
 
 		-
-			message: '#^Method Appwrite\\Platform\\Modules\\VCS\\Http\\GitHub\\Authorize\\External\\Update\:\:getBuildQueueName\(\) should return string but returns string\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Authorize/External/Update.php
-
-		-
 			message: '#^Method Appwrite\\Platform\\Modules\\VCS\\Http\\GitHub\\Authorize\\External\\Update\:\:getName\(\) has no return type specified\.$#'
 			identifier: missingType.return
 			count: 1
@@ -27703,12 +27619,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Callback/Get.php
 
 		-
-			message: '#^Parameter \#1 \$appId of class Appwrite\\Auth\\OAuth2\\Github constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Callback/Get.php
-
-		-
 			message: '#^Parameter \#1 \$haystack of function str_contains expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
@@ -27722,12 +27632,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$url of method Utopia\\Http\\Response\:\:redirect\(\) expects string, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Callback/Get.php
-
-		-
-			message: '#^Parameter \#2 \$appSecret of class Appwrite\\Auth\\OAuth2\\Github constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Callback/Get.php
@@ -27897,12 +27801,6 @@ parameters:
 		-
 			message: '#^Method Appwrite\\Platform\\Modules\\VCS\\Http\\GitHub\\Events\\Create\:\:createGitDeployments\(\) has parameter \$repositories with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Events/Create.php
-
-		-
-			message: '#^Method Appwrite\\Platform\\Modules\\VCS\\Http\\GitHub\\Events\\Create\:\:getBuildQueueName\(\) should return string but returns string\|null\.$#'
-			identifier: return.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Events/Create.php
 
@@ -28160,12 +28058,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#3 \$pullRequestNumber of method Utopia\\VCS\\Adapter\\Git\\GitHub\:\:createComment\(\) expects int, string given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Events/Create.php
-
-		-
-			message: '#^Parameter \#3 \$signatureKey of method Utopia\\VCS\\Adapter\\Git\\GitHub\:\:validateWebhookEvent\(\) expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/VCS/Http/GitHub/Events/Create.php
@@ -28465,12 +28357,6 @@ parameters:
 			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Create.php
 
 		-
-			message: '#^Parameter \#1 \$appId of class Appwrite\\Auth\\OAuth2\\Github constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Create.php
-
-		-
 			message: '#^Parameter \#1 \$datetime of class DateTime constructor expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -28502,12 +28388,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$value of function strval expects bool\|float\|int\|resource\|string\|null, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Create.php
-
-		-
-			message: '#^Parameter \#2 \$appSecret of class Appwrite\\Auth\\OAuth2\\Github constructor expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Create.php
@@ -28607,12 +28487,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Detections/Create.php
-
-		-
-			message: '#^Call to an undefined method Utopia\\VCS\\Adapter\\Git\\GitHub\:\:getInstallationRepository\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: src/Appwrite/Platform/Modules/VCS/Http/Installations/Repositories/Get.php
 
 		-
 			message: '#^Expression on left side of \?\? is not nullable\.$#'
@@ -29023,12 +28897,6 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Doctor.php
 
 		-
-			message: '#^Parameter \#1 \$host of class Appwrite\\ClamAV\\Network constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/Doctor.php
-
-		-
 			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
 			identifier: argument.type
 			count: 1
@@ -29065,18 +28933,6 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Doctor.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/Doctor.php
-
-		-
-			message: '#^Parameter \#2 \$version2 of function version_compare expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/Doctor.php
-
-		-
 			message: '#^Part \$database \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 3
@@ -29089,9 +28945,21 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Doctor.php
 
 		-
+			message: '#^Variable \$providerConfig on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.variable
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Doctor.php
+
+		-
 			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
 			identifier: foreach.nonIterable
 			count: 2
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Binary operation "\." between ''https\://'' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
@@ -29103,13 +28971,31 @@ parameters:
 		-
 			message: '#^Binary operation "\." between non\-falsy\-string and mixed results in an error\.$#'
 			identifier: binaryOp.invalid
+			count: 2
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot access offset ''\$id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
 			message: '#^Cannot access offset ''default'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 8
+			count: 6
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot access offset ''done''\|''start'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot access offset ''expire'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
@@ -29119,9 +29005,21 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
-			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			message: '#^Cannot access offset ''id'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
 			count: 2
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot access offset ''message'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 10
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
@@ -29143,8 +29041,134 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
+			message: '#^Cannot access offset ''secret'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
 			message: '#^Cannot access offset ''variables'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 3
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Comparison operation "\<\=" between 0\|1\|2 and 2 is always true\.$#'
+			identifier: smallerOrEqual.alwaysTrue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:buildStepMessages\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:createInitialAdminAccount\(\) has parameter \$account with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:makeApiCall\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:makeApiCall\(\) has parameter \$body with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:performInstallation\(\) has parameter \$account with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:performInstallation\(\) has parameter \$input with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:prepareEnvironmentVariables\(\) has parameter \$userInput with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:prepareEnvironmentVariables\(\) has parameter \$vars with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:prepareEnvironmentVariables\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:readInstallerConfig\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:readInstallerConfig\(\) should return array but returns array\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:runDockerCompose\(\) has parameter \$input with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:setInstallerConfig\(\) has parameter \$config with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:startWebServer\(\) has parameter \$vars with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:trackSelfHostedInstall\(\) has parameter \$account with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:trackSelfHostedInstall\(\) has parameter \$input with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:updateProgress\(\) has parameter \$details with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Install\:\:updateProgress\(\) has parameter \$messages with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
 
@@ -29155,7 +29179,31 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
-			message: '#^Parameter \#1 \$arg of function escapeshellarg expects string, mixed given\.$#'
+			message: '#^Negated boolean expression is always true\.$#'
+			identifier: booleanNot.alwaysTrue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Parameter \#1 \$domain of method Appwrite\\Platform\\Tasks\\Install\:\:waitForApiReady\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Parameter \#1 \$haystack of function str_starts_with expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Parameter \#1 \$varName of method Appwrite\\Platform\\Tasks\\Install\:\:generatePasswordValue\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Parameter \#4 \$domain of method Appwrite\\Platform\\Tasks\\Install\:\:createInitialAdminAccount\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
@@ -29167,7 +29215,7 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
-			message: '#^Part \$input\[\$var\[''name''\]\] \(mixed\) of encapsed string cannot be cast to string\.$#'
+			message: '#^Part \$message \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
@@ -29175,7 +29223,13 @@ parameters:
 		-
 			message: '#^Possibly invalid array key type mixed\.$#'
 			identifier: offsetAccess.invalidOffset
-			count: 10
+			count: 9
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Property Appwrite\\Platform\\Tasks\\Install\:\:\$installerConfig type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
@@ -29185,8 +29239,20 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Install.php
 
 		-
+			message: '#^Strict comparison using \!\=\= between string and false will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
 			message: '#^Using nullsafe method call on non\-nullable type Appwrite\\Docker\\Compose\\Service\. Use \-\> instead\.$#'
 			identifier: nullsafe.neverNull
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Install.php
+
+		-
+			message: '#^Variable \$compose in isset\(\) always exists and is not nullable\.$#'
+			identifier: isset.variable
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Install.php
 
@@ -29269,12 +29335,6 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Interval.php
 
 		-
-			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, string\|null\> given\.$#'
-			identifier: argument.type
-			count: 2
-			path: src/Appwrite/Platform/Tasks/Interval.php
-
-		-
 			message: '#^Part \$taskName \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 1
@@ -29312,12 +29372,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, mixed\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/Maintenance.php
-
-		-
-			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, string\|null\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Maintenance.php
@@ -29971,12 +30025,6 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/SDKs.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/SSL.php
-
-		-
 			message: '#^Binary operation "\*" between mixed and 1000 results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
@@ -30044,12 +30092,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$seconds of function sleep expects int, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/ScheduleBase.php
-
-		-
-			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, string\|null\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Tasks/ScheduleBase.php
@@ -30805,10 +30847,22 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/StatsResources.php
 
 		-
-			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, string\|null\> given\.$#'
-			identifier: argument.type
+			message: '#^Call to static method error\(\) on an unknown class Utopia\\CLI\\Console\.$#'
+			identifier: class.notFound
 			count: 1
-			path: src/Appwrite/Platform/Tasks/StatsResources.php
+			path: src/Appwrite/Platform/Tasks/Upgrade.php
+
+		-
+			message: '#^Call to static method log\(\) on an unknown class Utopia\\CLI\\Console\.$#'
+			identifier: class.notFound
+			count: 5
+			path: src/Appwrite/Platform/Tasks/Upgrade.php
+
+		-
+			message: '#^Method Appwrite\\Platform\\Tasks\\Upgrade\:\:startWebServer\(\) has parameter \$vars with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Appwrite/Platform/Tasks/Upgrade.php
 
 		-
 			message: '#^Negated boolean expression is always false\.$#'
@@ -30817,14 +30871,14 @@ parameters:
 			path: src/Appwrite/Platform/Tasks/Upgrade.php
 
 		-
-			message: '#^Parameter \#1 \$data of class Appwrite\\Docker\\Compose constructor expects string, string\|false given\.$#'
+			message: '#^Parameter \#7 \$database of method Appwrite\\Platform\\Tasks\\Install\:\:action\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Upgrade.php
 
 		-
-			message: '#^Parameter \#7 \$database of method Appwrite\\Platform\\Tasks\\Install\:\:action\(\) expects string, mixed given\.$#'
-			identifier: argument.type
+			message: '#^Property Appwrite\\Platform\\Tasks\\Upgrade\:\:\$lockedDatabase \(string\|null\) does not accept mixed\.$#'
+			identifier: assign.propertyType
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Upgrade.php
 
@@ -30857,12 +30911,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Tasks/Vars.php
-
-		-
-			message: '#^Parameter \#1 \$message of static method Utopia\\Console\:\:log\(\) expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Tasks/Version.php
 
 		-
 			message: '#^Cannot access an offset on mixed\.$#'
@@ -30973,12 +31021,6 @@ parameters:
 			path: src/Appwrite/Platform/Workers/Certificates.php
 
 		-
-			message: '#^Parameter \#1 \$default of class Utopia\\Locale\\Locale constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Certificates.php
-
-		-
 			message: '#^Parameter \#1 \$dnsValidatorClass of method Appwrite\\Platform\\Modules\\Proxy\\Action\:\:__construct\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -30992,12 +31034,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$input of class Utopia\\Database\\Document constructor expects array\<string, mixed\>, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Certificates.php
-
-		-
-			message: '#^Parameter \#1 \$name of method Utopia\\Locale\\Locale\:\:setFallback\(\) expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Workers/Certificates.php
@@ -31363,12 +31399,6 @@ parameters:
 			path: src/Appwrite/Platform/Workers/Deletes.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: src/Appwrite/Platform/Workers/Deletes.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Utopia\\Logger\\Log\:\:addTag\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -31395,7 +31425,7 @@ parameters:
 		-
 			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, string\|null\> given\.$#'
 			identifier: argument.type
-			count: 40
+			count: 38
 			path: src/Appwrite/Platform/Workers/Deletes.php
 
 		-
@@ -31502,12 +31532,6 @@ parameters:
 
 		-
 			message: '#^Binary operation "\." between ''Triggered function\: '' and mixed results in an error\.$#'
-			identifier: binaryOp.invalid
-			count: 1
-			path: src/Appwrite/Platform/Workers/Functions.php
-
-		-
-			message: '#^Binary operation "\." between ''cd /usr/local…'' and mixed results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
 			path: src/Appwrite/Platform/Workers/Functions.php
@@ -31688,6 +31712,12 @@ parameters:
 
 		-
 			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Appwrite/Platform/Workers/Functions.php
+
+		-
+			message: '#^Parameter \#3 \$subject of function str_replace expects array\<string\>\|string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Workers/Functions.php
@@ -31988,12 +32018,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$string of function strip_tags expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Mails.php
-
-		-
-			message: '#^Parameter \#1 \$string of function urldecode expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Workers/Mails.php
@@ -32845,12 +32869,6 @@ parameters:
 			path: src/Appwrite/Platform/Workers/Messaging.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Messaging.php
-
-		-
 			message: '#^Parameter \#2 \$subject of class Utopia\\Messaging\\Messages\\Email constructor expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -33445,12 +33463,6 @@ parameters:
 			path: src/Appwrite/Platform/Workers/Migrations.php
 
 		-
-			message: '#^Parameter \#1 \$default of class Utopia\\Locale\\Locale constructor expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Migrations.php
-
-		-
 			message: '#^Parameter \#1 \$deviceForFiles of class Utopia\\Migration\\Destinations\\CSV constructor expects Utopia\\Storage\\Device, Utopia\\Storage\\Device\|null given\.$#'
 			identifier: argument.type
 			count: 1
@@ -33500,12 +33512,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$name of method Appwrite\\Event\\Mail\:\:setSenderName\(\) expects string, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Platform/Workers/Migrations.php
-
-		-
-			message: '#^Parameter \#1 \$name of method Utopia\\Locale\\Locale\:\:setFallback\(\) expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: src/Appwrite/Platform/Workers/Migrations.php
@@ -36601,12 +36607,6 @@ parameters:
 			path: src/Appwrite/Utopia/Request.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Appwrite/Utopia/Request.php
-
-		-
 			message: '#^Part \$key \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 1
@@ -38803,12 +38803,6 @@ parameters:
 			path: src/Executor/Executor.php
 
 		-
-			message: '#^Property Executor\\Executor\:\:\$endpoint \(string\) does not accept string\|null\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: src/Executor/Executor.php
-
-		-
 			message: '#^Property Executor\\Executor\:\:\$headers type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
@@ -40654,12 +40648,6 @@ parameters:
 			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertCount\(\) expects Countable\|iterable, mixed given\.$#'
 			identifier: argument.type
 			count: 2
-			path: tests/e2e/General/UsageTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 3
 			path: tests/e2e/General/UsageTest.php
 
 		-
@@ -47331,7 +47319,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 27
+			count: 30
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsGuestTest.php
 
 		-
@@ -47373,7 +47361,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 38
+			count: 39
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsGuestTest.php
 
 		-
@@ -47757,7 +47745,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 28
+			count: 31
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsMemberTest.php
 
 		-
@@ -47793,7 +47781,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 31
+			count: 32
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsMemberTest.php
 
 		-
@@ -48171,7 +48159,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 21
+			count: 24
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsTeamTest.php
 
 		-
@@ -48207,7 +48195,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 27
+			count: 28
 			path: tests/e2e/Services/Databases/Permissions/LegacyPermissionsTeamTest.php
 
 		-
@@ -50911,12 +50899,6 @@ parameters:
 			path: tests/e2e/Services/Functions/FunctionsConsoleClientTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Functions/FunctionsConsoleClientTest.php
-
-		-
 			message: '#^Part \$this\-\>getProject\(\)\[''\$id''\] \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 1
@@ -51512,12 +51494,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertStringContainsString\(\) expects string, mixed given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Functions/FunctionsCustomClientTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: tests/e2e/Services/Functions/FunctionsCustomClientTest.php
@@ -52561,12 +52537,6 @@ parameters:
 			path: tests/e2e/Services/Functions/FunctionsCustomServerTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Functions/FunctionsCustomServerTest.php
-
-		-
 			message: '#^Parameter \#2 \$string of function unpack expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
@@ -53038,12 +53008,6 @@ parameters:
 			message: '#^Parameter \#2 \$minute of method DateTime\:\:setTime\(\) expects int, string given\.$#'
 			identifier: argument.type
 			count: 2
-			path: tests/e2e/Services/FunctionsSchedule/FunctionsScheduleTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: tests/e2e/Services/FunctionsSchedule/FunctionsScheduleTest.php
 
 		-
@@ -55015,7 +54979,7 @@ parameters:
 			path: tests/e2e/Services/GraphQL/HealthTest.php
 
 		-
-			message: '#^Binary operation "\+" between string\|null and 1 results in an error\.$#'
+			message: '#^Binary operation "\+" between string and 1 results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
 			path: tests/e2e/Services/GraphQL/Legacy/AbuseTest.php
@@ -57895,7 +57859,7 @@ parameters:
 			path: tests/e2e/Services/GraphQL/StorageServerTest.php
 
 		-
-			message: '#^Binary operation "\+" between string\|null and 1 results in an error\.$#'
+			message: '#^Binary operation "\+" between string and 1 results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
 			path: tests/e2e/Services/GraphQL/TablesDB/AbuseTest.php
@@ -64381,12 +64345,6 @@ parameters:
 			path: tests/e2e/Services/Migrations/MigrationsConsoleClientTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Migrations/MigrationsConsoleClientTest.php
-
-		-
 			message: '#^Parameter \#2 \$subject of function preg_match expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
@@ -65335,12 +65293,6 @@ parameters:
 			path: tests/e2e/Services/Projects/ProjectsCustomServerTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: tests/e2e/Services/Projects/ProjectsCustomServerTest.php
-
-		-
 			message: '#^Property Tests\\E2E\\Services\\Projects\\ProjectsCustomServerTest\:\:\$key type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
@@ -65911,12 +65863,6 @@ parameters:
 			path: tests/e2e/Services/Proxy/ProxyCustomServerTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 3
-			path: tests/e2e/Services/Proxy/ProxyCustomServerTest.php
-
-		-
 			message: '#^Parameter \#2 \$values of static method Utopia\\Database\\Query\:\:equal\(\) expects array\<array\<mixed\>\|bool\|float\|int\|string\>, array\<int, mixed\> given\.$#'
 			identifier: argument.type
 			count: 6
@@ -66460,12 +66406,6 @@ parameters:
 			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertCount\(\) expects Countable\|iterable, mixed given\.$#'
 			identifier: argument.type
 			count: 28
-			path: tests/e2e/Services/Realtime/RealtimeConsoleClientTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: tests/e2e/Services/Realtime/RealtimeConsoleClientTest.php
 
 		-
@@ -67072,12 +67012,6 @@ parameters:
 			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertStringContainsString\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 10
-			path: tests/e2e/Services/Realtime/RealtimeCustomClientQueryTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: tests/e2e/Services/Realtime/RealtimeCustomClientQueryTest.php
 
 		-
@@ -67771,12 +67705,6 @@ parameters:
 			path: tests/e2e/Services/Realtime/RealtimeCustomClientTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Realtime/RealtimeCustomClientTest.php
-
-		-
 			message: '#^Parameter \#3 \$message of method PHPUnit\\Framework\\Assert\:\:assertEquals\(\) expects string, string\|false given\.$#'
 			identifier: argument.type
 			count: 1
@@ -68263,12 +68191,6 @@ parameters:
 			path: tests/e2e/Services/Sites/SitesConsoleClientTest.php
 
 		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: tests/e2e/Services/Sites/SitesConsoleClientTest.php
-
-		-
 			message: '#^Part \$screenshotId \(mixed\) of encapsed string cannot be cast to string\.$#'
 			identifier: encapsedStringPart.nonString
 			count: 8
@@ -68620,12 +68542,6 @@ parameters:
 			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertStringContainsString\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
-			path: tests/e2e/Services/Sites/SitesCustomClientTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 1
 			path: tests/e2e/Services/Sites/SitesCustomClientTest.php
 
 		-
@@ -69436,12 +69352,6 @@ parameters:
 			message: '#^Parameter \#2 \$repository of method Tests\\E2E\\Services\\Sites\\SitesCustomServerTest\:\:helperGetLatestCommit\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
-			path: tests/e2e/Services/Sites/SitesCustomServerTest.php
-
-		-
-			message: '#^Parameter \#2 \$string of function explode expects string, string\|null given\.$#'
-			identifier: argument.type
-			count: 2
 			path: tests/e2e/Services/Sites/SitesCustomServerTest.php
 
 		-
@@ -71277,7 +71187,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 33
+			count: 36
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsGuestTest.php
 
 		-
@@ -71319,7 +71229,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 38
+			count: 39
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsGuestTest.php
 
 		-
@@ -71703,7 +71613,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 28
+			count: 31
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsMemberTest.php
 
 		-
@@ -71739,7 +71649,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 31
+			count: 32
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsMemberTest.php
 
 		-
@@ -72117,7 +72027,7 @@ parameters:
 		-
 			message: '#^Cannot access offset ''status\-code'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
-			count: 25
+			count: 28
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsTeamTest.php
 
 		-
@@ -72153,7 +72063,7 @@ parameters:
 		-
 			message: '#^Cannot call method call\(\) on Tests\\E2E\\Client\|null\.$#'
 			identifier: method.nonObject
-			count: 27
+			count: 28
 			path: tests/e2e/Services/TablesDB/Permissions/TablesDBPermissionsTeamTest.php
 
 		-
@@ -82295,6 +82205,300 @@ parameters:
 			identifier: missingType.iterableValue
 			count: 1
 			path: tests/unit/Platform/Modules/Compute/Validator/SpecificationTest.php
+
+		-
+			message: '#^Call to function method_exists\(\) with ''Appwrite\\\\Platform\\\\Installer\\\\Http\\\\Installer\\\\Validate'' and ''validateCsrf'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertTrue\(\) with true will always evaluate to true\.$#'
+			identifier: method.alreadyNarrowedType
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Cannot access offset ''type'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Cannot call method getActions\(\) on Utopia\\Platform\\Service\|false\.$#'
+			identifier: method.nonObject
+			count: 7
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Cannot call method getServicesByType\(\) on Appwrite\\Platform\\Installer\\Module\|null\.$#'
+			identifier: method.nonObject
+			count: 10
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Method Tests\\Unit\\Platform\\Modules\\Installer\\ModuleTest\:\:assertActionInjects\(\) has parameter \$expectedInjections with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Method Tests\\Unit\\Platform\\Modules\\Installer\\ModuleTest\:\:assertActionParams\(\) has parameter \$expectedParams with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/ModuleTest.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Runtime/ConfigTest.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertCount\(\) expects Countable\|iterable, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/ConfigTest.php
+
+		-
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertIsArray\(\) with array will always evaluate to true\.$#'
+			identifier: method.alreadyNarrowedType
+			count: 5
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''composeFile'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''database'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''defaultHttpPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''docker\-compose'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''env\-vars'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''httpPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''httpsPort'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''installId'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''message'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot access offset ''status'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method applyEnvConfig\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 3
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method buildConfig\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 12
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method hashSensitiveValue\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 12
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidAccountName\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 6
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidAppDomainInput\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 29
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidDatabaseAdapter\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 15
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidEmailAddress\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 11
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidPassword\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 12
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidPort\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 28
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method isValidSecretKey\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 8
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method progressFilePath\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 12
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method readProgressFile\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 19
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method reserveGlobalLock\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 14
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method sanitizeInstallId\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 15
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method updateGlobalLock\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 5
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Cannot call method writeProgressFile\(\) on Appwrite\\Platform\\Installer\\Runtime\\State\|null\.$#'
+			identifier: method.nonObject
+			count: 21
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Parameter \#1 \$filename of function unlink expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Parameter \#1 \$prefix of method PHPUnit\\Framework\\Assert\:\:assertStringStartsWith\(\) expects non\-empty\-string, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Parameter \#2 \$array of method PHPUnit\\Framework\\Assert\:\:assertArrayHasKey\(\) expects array\<mixed\>\|ArrayAccess\<\(int\|string\), mixed\>, mixed given\.$#'
+			identifier: argument.type
+			count: 6
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of method PHPUnit\\Framework\\Assert\:\:assertCount\(\) expects Countable\|iterable, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Property Tests\\Unit\\Platform\\Modules\\Installer\\Runtime\\StateTest\:\:\$progressFiles type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Runtime/StateTest.php
+
+		-
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertIsString\(\) with string will always evaluate to true\.$#'
+			identifier: method.alreadyNarrowedType
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
+
+		-
+			message: '#^Cannot access constant TYPE_STRING on Appwrite\\Platform\\Installer\\Validator\\AppDomain\|null\.$#'
+			identifier: classConstant.nonObject
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
+
+		-
+			message: '#^Cannot call method getDescription\(\) on Appwrite\\Platform\\Installer\\Validator\\AppDomain\|null\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
+
+		-
+			message: '#^Cannot call method getType\(\) on Appwrite\\Platform\\Installer\\Validator\\AppDomain\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
+
+		-
+			message: '#^Cannot call method isArray\(\) on Appwrite\\Platform\\Installer\\Validator\\AppDomain\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
+
+		-
+			message: '#^Cannot call method isValid\(\) on Appwrite\\Platform\\Installer\\Validator\\AppDomain\|null\.$#'
+			identifier: method.nonObject
+			count: 61
+			path: tests/unit/Platform/Modules/Installer/Validator/AppDomainTest.php
 
 		-
 			message: '#^Cannot access offset ''host'' on mixed\.$#'
