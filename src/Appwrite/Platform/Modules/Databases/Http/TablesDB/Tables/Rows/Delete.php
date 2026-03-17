@@ -72,6 +72,7 @@ class Delete extends DocumentDelete
             ->inject('transactionState')
             ->inject('plan')
             ->inject('authorization')
+            ->inject('user')
             ->callback($this->action(...));
     }
 }
