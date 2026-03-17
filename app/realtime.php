@@ -508,8 +508,7 @@ $server->onWorkerStart(function (int $workerId) use ($server, $register, $stats,
                         $project = $consoleDatabase->getAuthorization()->skip(fn () => $consoleDatabase->getDocument('projects', $projectId));
                         $database = getProjectDB($project);
 
-                        /** @var Appwrite\Utopia\Database\Documents\User $user */
-                        $user = $database->getDocument('users', $userId);
+                        $user = new User($database->getDocument('users', $userId)->getArrayCopy());
 
                         $roles = $user->getRoles($database->getAuthorization());
                         $authorization = $realtime->connections[$connection]['authorization'] ?? null;
@@ -878,8 +877,7 @@ $server->onMessage(function (int $connection, string $message) use ($server, $re
 
                 $store->decode($message['data']['session']);
 
-                /** @var User $user */
-                $user = $database->getDocument('users', $store->getProperty('id', ''));
+                $user = new User($database->getDocument('users', $store->getProperty('id', ''))->getArrayCopy());
 
                 /**
                  * TODO:
