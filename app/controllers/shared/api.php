@@ -678,7 +678,7 @@ Http::init()
     ->groups(['session'])
     ->inject('user')
     ->inject('request')
-    ->action(function (Document $user, Request $request) {
+    ->action(function (User $user, Request $request) {
         if (\str_contains($request->getURI(), 'oauth2')) {
             return;
         }
